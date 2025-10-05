@@ -15,7 +15,7 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(Catch2)
 
-add_executable(prime_test tests/prime_test.cpp src/prime.cpp)
-add_executable(main main.cpp src/prime.cpp)
+add_executable(prime_test tests/prime_test.cpp src/prime.cpp src/factorizer.cpp)
+add_executable(main main.cpp src/prime.cpp src/factorizer.cpp)
 
 target_link_libraries(prime_test PRIVATE Catch2::Catch2WithMain)
